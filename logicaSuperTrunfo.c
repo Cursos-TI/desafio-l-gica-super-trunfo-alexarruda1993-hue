@@ -2,24 +2,24 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Super Trunfo - Desafio Mestre
-
 int main() {
+    srand(time(0));
+
     // Dados das cartas e nomes dos países
     char nome1[30] = "Brasil";
     char nome2[30] = "Japao";
 
-    int populacao1 = 215000000;
-    int populacao2 = 125000000;
+    int populacao1 = 5000000 + rand() % 200000000;
+    int populacao2 = 5000000 + rand() % 200000000;
 
-    float area1 = 8515767.0;
-    float area2 = 377975.0;
+    float area1 = 50000 + rand() % 9000000;
+    float area2 = 50000 + rand() % 9000000;
 
-    float pib1 = 1920.0;
-    float pib2 = 4940.0;
+    float pib1 = 100 + rand() % 8000;
+    float pib2 = 100 + rand() % 8000;
 
-    int pontos1 = 150;
-    int pontos2 = 200;
+    int pontos1 = 10 + rand() % 300;
+    int pontos2 = 10 + rand() % 300;
 
     // Cálculo da densidade
     float densidade1 = populacao1 / area1;
